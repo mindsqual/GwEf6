@@ -66,6 +66,18 @@
     <Compile Include="Migrations\201709071327134_current.Designer.cs">
       <DependentUpon>201709071327134_current.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709071453176_Address_has_Required_FK_PersonId.cs" />
+    <Compile Include="Migrations\201709071453176_Address_has_Required_FK_PersonId.Designer.cs">
+      <DependentUpon>201709071453176_Address_has_Required_FK_PersonId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709071500129_Address_has_FK_PersonId.cs" />
+    <Compile Include="Migrations\201709071500129_Address_has_FK_PersonId.Designer.cs">
+      <DependentUpon>201709071500129_Address_has_FK_PersonId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709071536338_PopulateAddresses_inConsoleApp.cs" />
+    <Compile Include="Migrations\201709071536338_PopulateAddresses_inConsoleApp.Designer.cs">
+      <DependentUpon>201709071536338_PopulateAddresses_inConsoleApp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -91,6 +103,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709071327134_current.resx">
       <DependentUpon>201709071327134_current.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709071453176_Address_has_Required_FK_PersonId.resx">
+      <DependentUpon>201709071453176_Address_has_Required_FK_PersonId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709071500129_Address_has_FK_PersonId.resx">
+      <DependentUpon>201709071500129_Address_has_FK_PersonId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709071536338_PopulateAddresses_inConsoleApp.resx">
+      <DependentUpon>201709071536338_PopulateAddresses_inConsoleApp.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

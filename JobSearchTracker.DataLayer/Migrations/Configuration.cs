@@ -24,8 +24,8 @@ namespace JobSearchTracker.DataLayer.Migrations
               p => p.FirstName,
               new ContactPerson { FirstName = "Andrew", LastName= "Peters" },
               new ContactPerson { FirstName = "Brice", LastName= "Lambson" },
-              new ContactPerson { FirstName = "Rowan", LastName="Miller" },
-              new ContactPerson { FirstName = "Ray", LastName = "Oflite" }
+              new ContactPerson { FirstName = "Rowan", LastName="Miller" }
+              
             );
 
             context.Companies.AddOrUpdate(
@@ -34,11 +34,11 @@ namespace JobSearchTracker.DataLayer.Migrations
                 new Company { Name = "Alph and Beta", Description = "We mind being last." }
             );
 
-            context.Addresses.AddOrUpdate(
-                a=>a.Street,
-                new Address { Street="7 Adams",City="Boston", ContactPersonId=1, StateProvince="MA", PostalCode= "01234"},
-                new Address { Street = "8 Adams", City = "Detroit", ContactPersonId = 2, StateProvince = "MI", PostalCode = "01237" }
-                );
+            //TO-DO:  Add using Transactions... see console app.
+            //context.Addresses.AddOrUpdate(
+            //    a=>a.Street,
+            //    new Address { Street="7 Adams",City="Boston", StateProvince="MA", PostalCode= "01234"}
+            //    );
 
         }
     }

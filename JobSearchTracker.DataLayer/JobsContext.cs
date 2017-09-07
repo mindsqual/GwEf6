@@ -10,8 +10,8 @@ namespace JobSearchTracker.DataLayer
             //Database.SetInitializer<JobsContext>(new CreateDatabaseIfNotExists<JobsContext>());
 
             //other initiallizers
-            //Database.SetInitializer<JobsContext>(new DropCreateDatabaseIfModelChanges<JobsContext>());
-            Database.SetInitializer<JobsContext>(new DropCreateDatabaseAlways<JobsContext>());
+            Database.SetInitializer<JobsContext>(new DropCreateDatabaseIfModelChanges<JobsContext>());
+            //Database.SetInitializer<JobsContext>(new DropCreateDatabaseAlways<JobsContext>());
             //Database.SetInitializer<JobsContext>(new JobsDBInitializer());
         }
 

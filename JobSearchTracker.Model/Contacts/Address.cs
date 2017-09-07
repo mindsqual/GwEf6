@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JobSearchTracker.Model
 {
@@ -10,6 +11,8 @@ namespace JobSearchTracker.Model
         public string StateProvince { get; set; }
         public string PostalCode { get; set; }
         public AddressType AddressType { get; set; }
+
+        //[ForeignKey("Person")]
         public int ContactPersonId { get; set; }
         
         public virtual ContactPerson Person { get; set; }
