@@ -62,6 +62,10 @@
     <Compile Include="Migrations\201709051802506_JobLead_Dropped_Frm_Model.Designer.cs">
       <DependentUpon>201709051802506_JobLead_Dropped_Frm_Model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709071327134_current.cs" />
+    <Compile Include="Migrations\201709071327134_current.Designer.cs">
+      <DependentUpon>201709071327134_current.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -84,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709051802506_JobLead_Dropped_Frm_Model.resx">
       <DependentUpon>201709051802506_JobLead_Dropped_Frm_Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709071327134_current.resx">
+      <DependentUpon>201709071327134_current.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
