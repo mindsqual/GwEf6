@@ -39,7 +39,7 @@ namespace JobsTrackerConsoleApp
             {
 
                 using (JobsContext db = new JobsContext())
-                {
+                 {
                     #region//person1
                     //TO-DO:  check whether person exists first...
                     ContactPerson person1=new ContactPerson { FirstName = "Ray", LastName = "Oflite" };
